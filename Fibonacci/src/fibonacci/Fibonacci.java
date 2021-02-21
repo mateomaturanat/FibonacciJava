@@ -5,6 +5,8 @@
  */
 package fibonacci;
 
+import fibonacci.Models.FibonacciModel;
+
 /**
  *
  * @author Mateo
@@ -15,7 +17,9 @@ public class Fibonacci {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        FibonacciModel set1=new FibonacciModel();
+        set1.setSize(20);
+        set1.showFibonacci();
     }
     
 }
