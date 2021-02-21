@@ -14,7 +14,9 @@ import java.util.List;
  */
 public class FibonacciModel {
 
+    //This atribute is for assign size of sequence fibonacci
     private int size;
+    //This List is for save numbers of sequence
     private List<Integer> listFibonacci= new ArrayList<Integer>();
 
     public FibonacciModel(int size, List<Integer> listFibonacci) {
@@ -40,7 +42,7 @@ public class FibonacciModel {
     public void setSize(int size) {
         this.size = size;
     }
-
+    //THis function is for generate the fibonacci sequence
     private void fibonacci(int num) {
         if (num > 1) {
             listFibonacci.add(listFibonacci.get(num-1)+listFibonacci.get(num-2));
@@ -52,6 +54,7 @@ public class FibonacciModel {
             System.out.println("El tamaño debe ser igual o superior a 1");
         }
     }
+    //This function is for show the numbers
     public void showFibonacci(){
         for(int i=0;i< this.size; i++){
             fibonacci(i);
