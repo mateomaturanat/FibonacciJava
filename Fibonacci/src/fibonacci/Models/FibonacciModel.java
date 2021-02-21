@@ -55,7 +55,7 @@ public class FibonacciModel {
     public void showFibonacci(){
         for(int i=0;i< this.size; i++){
             fibonacci(i);
-            System.out.println(this.listFibonacci.get(i)+", ");
+            System.out.print(this.listFibonacci.get(i)+", ");
         }
     }
 
