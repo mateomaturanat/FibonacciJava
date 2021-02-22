@@ -19,7 +19,7 @@ public class Fibonacci {
     public static void main(String[] args) {
         FibonacciModel set1=new FibonacciModel();
         //here we assign the size of the sequence
-        set1.setSize(20);
+        set1.setSize(10);
         set1.showFibonacci();
     }
     

@@ -60,6 +60,27 @@ public class FibonacciModel {
             fibonacci(i);
             System.out.print(this.listFibonacci.get(i)+", ");
         }
+        IsPrime();
     }
+    private void IsPrime()
+        {
+            boolean is_Prime = true;
+            for(int i = 3; i < listFibonacci.get(this.size - 1); i++)
+            {
+                if(listFibonacci.get(this.size - 1) % i==0)
+                {
+                    is_Prime = false;
+                    break;
+                }
+            }
+            if (is_Prime)
+            {
+                System.out.println("El numero es primo");
+            }
+            else
+            {
+                System.out.println("El numero no es primo");
+            }
+        }
 
 }
